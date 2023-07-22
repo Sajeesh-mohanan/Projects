@@ -54,8 +54,6 @@ def save_password():
         messagebox.showerror(title="Error", message="Please don't leave empty fields")
 
     else:
-        # is_ok = messagebox.askokcancel(title=f"{website}", message=f"Email: {email} \nPassword: {password} \n Do you want to save?")
-        # if is_ok:
         try:
             with open("data.json", "r") as json_data:
                 data = json.load(json_data)
