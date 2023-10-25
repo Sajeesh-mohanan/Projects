@@ -14,6 +14,7 @@ class Scoreboard(Turtle):
         self.color("white")
         self.penup()
         self.goto(0, 280)
+        self.check_high_score()
         self.display_scoreboard()
         self.hideturtle()
 
